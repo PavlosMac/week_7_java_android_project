@@ -2,7 +2,7 @@ package card_game;
 import card_game.*;
 
 
-public class Card{
+public class Card implements Deckable{
 
 
   private int card_number;

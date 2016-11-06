@@ -7,12 +7,12 @@ import java.util.*;
     private Card card;
     private RoyalCard royal;
     private String deckName;
-    public ArrayList<Card> cards;
+    public ArrayList<Deckable> cards;
     
 
     public Deck(String deckName){
       this.deckName = deckName;
-      this.cards = new ArrayList<Card>();
+      this.cards = new ArrayList<Deckable>();
     }
 
     public void addCardtoDeck(Card card){
