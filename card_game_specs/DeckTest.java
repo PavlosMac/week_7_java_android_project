@@ -7,9 +7,9 @@ import java.util.*;
   public class DeckTest{
 
     Deck deck;
-    Card fourOfSpades;
-    Card threeOfClubs;
-    Card fiveOfHearts;
+    Deckable fourOfSpades;
+    Deckable threeOfClubs;
+    Deckable fiveOfHearts;
 
 
   @Before
@@ -29,7 +29,7 @@ import java.util.*;
   @Test
   public void cardInDeckHasName(){
     deck.addCardtoDeck(fourOfSpades);
-    Card org = deck.getTopCard();
+    Deckable org = deck.getTopCard();
     assertEquals("4 of spades", org.toString());
   }
 

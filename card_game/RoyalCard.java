@@ -12,4 +12,19 @@ public class RoyalCard implements Deckable{
   this.royal = royal;
   }
 
+  public RoyalType getRoyal(){
+    return this.royal;
+  }
+
+  public SuitType getSuit(){
+    return this.suit;
+  }
+
+
+  public String toString(){
+    RoyalType royalToString = getRoyal();
+     SuitType suitToString = getSuit();
+    return String.format("%s of %s", royalToString.name().toLowerCase(), suitToString.name().toLowerCase());
+  }
+
 }

@@ -15,7 +15,7 @@ import java.util.*;
       this.cards = new ArrayList<Deckable>();
     }
 
-    public void addCardtoDeck(Card card){
+    public void addCardtoDeck(Deckable card){
       cards.add(card);
     }
 
@@ -23,11 +23,11 @@ import java.util.*;
     return this.cards.size();
   }
 
-  public Card getTopCard(){
+  public Deckable getTopCard(){
     return this.cards.remove(0);
   }
 
-  public boolean checkTopCardAfterShuffle(Card card){
+  public boolean checkTopCardAfterShuffle(Deckable card){
     if (getTopCard().equals(card)){
       return true;
     } 
@@ -39,7 +39,7 @@ import java.util.*;
   }
 
   public void populateNumerals(){
-    for (int i = 0; i < 10; i++){
+    for (int i = 1; i < 10; i++){
       for(SuitType suit : SuitType.values()){
         addCardtoDeck(new Card(i, suit));
       }
