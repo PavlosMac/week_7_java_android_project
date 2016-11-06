@@ -10,6 +10,7 @@ public class Player{
 
   public Player(String name){
     this.name = name;
+    
   }
 
   public String getName(){
@@ -24,6 +25,10 @@ public class Player{
   public Card getCard2(){
     return this.hand[1];
   }
+
+  // public int getHandCount(){
+  //   return this.hand.count();
+  // }
 
 
   public void addHand(Card card1, Card card2){

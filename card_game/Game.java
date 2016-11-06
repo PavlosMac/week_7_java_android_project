@@ -4,9 +4,20 @@ import java.util.*;
 
   public class Game{
 
-    Player player1;
-    Player player2;
+    Player player;
     Deck deck;
+    Card card;
+    Dealer dealer;
+    private ArrayList<Player> players = new ArrayList<Player>();
+
+
+    public void addPlayer(Player player){
+      players.add(player);
+    }
+    
+    
+
+
 
 
 

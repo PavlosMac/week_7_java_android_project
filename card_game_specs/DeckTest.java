@@ -45,27 +45,4 @@ import java.util.*;
 
 
 
-
-
-
-
-
-
-  // @Test
-  // public void deckCanShuffle(){
-  //   deck.addCardtoDeck(fourOfSpades);
-  //   deck.addCardtoDeck(threeOfClubs);
-  //   deck.addCardtoDeck(fiveOfHearts);
-  //   deck.shuffleDeck();
-  //   boolean check = deck.checkTopCardAfterShuffle(fiveOfHearts);
-  //   assertEquals(true, check);
-  // }
-
-  // @Test
-  // public void deckCanMakeHand(){
-  //   deck.makeHand();
-  //   int handCount = deck.countHand();
-  //   assertEquals(2, handCount);
-  // }
-
   }

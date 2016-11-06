@@ -54,6 +54,17 @@ import java.util.*;
     }
   }
 
+  public void getHand(Deckable[] args){
+    Deckable [] hand = new Deckable[2];
+    shuffleDeck();
+    Deckable card1 = getTopCard();
+    Deckable card2 = getTopCard();
+    hand[0] = card1;
+    hand[1] = card2;
+    return hand;
+
+  }
+
 
 
 
