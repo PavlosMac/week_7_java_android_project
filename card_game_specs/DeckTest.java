@@ -4,12 +4,12 @@ import org.junit.*;
 import java.util.*;
 
 
-  public class DeckTest{
+public class DeckTest{
 
-    Deck deck;
-    Deckable fourOfSpades;
-    Deckable threeOfClubs;
-    Deckable fiveOfHearts;
+  Deck deck;
+  Deckable fourOfSpades;
+  Deckable threeOfClubs;
+  Deckable fiveOfHearts;
 
 
   @Before
@@ -41,8 +41,8 @@ import java.util.*;
     assertEquals(52, deck.count());
   }
 
+  
 
 
 
-
-  }
+}

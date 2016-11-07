@@ -7,6 +7,7 @@ import org.junit.*;
 
   public class GameTest{
 
+    Game game;
     Deck deck;
     Player player1;
     Player player2;
@@ -28,7 +29,14 @@ import org.junit.*;
     public void gameCanHavePlayers(){
       game.addPlayers(player1);
       game.addPlayers(player2);
-      assertEquals(2, game.players.count());
+      assertEquals(2, game.playerCount());
+    }
+
+    @Test
+    public void gameCanDealToPlayers(){
+      game.dealToPlayers(deck);
+      assertNotNull(player1.hand());
+      assertNotNull(player2.hand());
     }
 
 

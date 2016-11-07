@@ -2,24 +2,24 @@ package card_game;
 import card_game.*;
 import java.util.*;
 
-  public class Deck{
+public class Deck{
 
-    private Card card;
-    private RoyalCard royal;
-    private String deckName;
-    public ArrayList<Deckable> cards;
-    
+  private Card card;
+  private RoyalCard royal;
+  private String deckName;
+  public ArrayList<Deckable> cards;
 
-    public Deck(String deckName){
-      this.deckName = deckName;
-      this.cards = new ArrayList<Deckable>();
-    }
 
-    public void addCardtoDeck(Deckable card){
-      cards.add(card);
-    }
+  public Deck(String deckName){
+    this.deckName = deckName;
+    this.cards = new ArrayList<Deckable>();
+  }
 
-    public int count(){
+  public void addCardtoDeck(Deckable card){
+    cards.add(card);
+  }
+
+  public int count(){
     return this.cards.size();
   }
 
@@ -34,7 +34,7 @@ import java.util.*;
     return false;
   }
 
-  public void shuffleDeck(){
+  public void shuffle(){
     Collections.shuffle(cards);
   }
 
@@ -54,18 +54,10 @@ import java.util.*;
     }
   }
 
-  public void getHand(Deckable[] args){
-    Deckable [] hand = new Deckable[2];
-    shuffleDeck();
-    Deckable card1 = getTopCard();
-    Deckable card2 = getTopCard();
-    hand[0] = card1;
-    hand[1] = card2;
-    return hand;
 
-  }
+  
 
 
 
 
-  }
+}
