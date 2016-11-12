@@ -1,42 +1,44 @@
-package card_game;
-import card_game.*;
-import java.util.*;
+// package card_game;
+// import card_game.*;
+// import java.util.*;
 
-  public class Game{
+//   public class Game{
 
-    Player player;
-    Card card;
-    private ArrayList<Deckable> deck = new ArrayList<Deckable>
-    Dealer dealer;
-    private ArrayList<Participant> players = new ArrayList<Participant>();
-    private ArrayList<Hand> hand = new ArrayList<Hand>();
-
-
-    public Game(){
-    this.players = players;
-    this.deck = new ArrayList<Deckable>();
-  }
-
-    public int playerCount(){
-      return players.size();
-    }
+//     Player player;
+//     Deckable card;
+//     Deck deck;
+//     Dealer dealer;
+//     private ArrayList<Participant> players = new ArrayList<Participant>();
+    
 
 
-    public void addPlayers(Player player){
-      players.add(player);
-    }
+//     public Game(){
+//     this.players = players;
+//     this.deck = deck;
+//   }
 
-    public void makeDeck(Deck deck){
-      deck.populateNumerals().populateRoyals().shuffle();
-    }
+//     public int playerCount(){
+//       return players.size();
+//     }
 
-    public void dealToPlayers(Deck deck){
-       Deckable cards = game.makeDeck(deck);
-        game.deal
-      for ( Player player : this.players){
-        player.addHand(card1, card2);
-      }
-    }
+   
+//     public void addPlayers(Participant player, Participant dealer){
+//       players.add(player);
+//       players.add(dealer);
+//     }
+
+   
+//     public void dealToPlayers(Deck deck, Participant dealer){
+//       deck.setupDeck();
+
+//       Deckable card1 = dealer.deal();
+//       Deckable card2 = dealer.deal();
+      
+//       for ( Participant player : this.players){
+//         player.addHand(card1, card2);
+//       }
+
+//     }
     
 
 
@@ -58,4 +60,4 @@ import java.util.*;
 
 
 
-  }
+//   }

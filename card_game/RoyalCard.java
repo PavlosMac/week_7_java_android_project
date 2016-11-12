@@ -27,4 +27,8 @@ public class RoyalCard implements Deckable{
     return String.format("%s of %s", royalToString.name().toLowerCase(), suitToString.name().toLowerCase());
   }
 
+  public int getRoyalValue(){
+    int value = getRoyal().getValue();
+      return value;
+  }
 }

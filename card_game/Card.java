@@ -14,7 +14,7 @@ public class Card implements Deckable{
     this.suit = suit;
   }
 
-  public int getValue(){
+  public int getNumber(){
     return this.card_number;
   }
 
@@ -27,7 +27,6 @@ public class Card implements Deckable{
      SuitType suitToString = this.suit;
     return String.format("%d of %s", numToString, suitToString.name().toLowerCase());
   }
-
 
 
 }

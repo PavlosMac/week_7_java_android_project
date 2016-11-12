@@ -14,7 +14,7 @@ import org.junit.*;
 
     @Test 
     public void cardHasValue(){
-        assertEquals(7, sevenOfDiamonds.getValue());
+        assertEquals(7, sevenOfDiamonds.getNumber());
     }
 
     @Test
@@ -26,6 +26,8 @@ import org.junit.*;
     public void cardValueAsString(){
       assertEquals("7 of diamonds", sevenOfDiamonds.toString());
     }
+
+  
   
    
   }

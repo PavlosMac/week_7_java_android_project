@@ -6,10 +6,11 @@ import java.util.*;
 public class Player implements Participant{
 
   private String name; 
-  private Deckable[] hand = new Deckable[2];
+  private Deckable[] hand;
 
   public Player(String name){
     this.name = name;
+    this.hand = new Deckable[2];
     
   }
 
@@ -17,18 +18,13 @@ public class Player implements Participant{
     return this.name;
   }
 
-  public Deckable getCard1(){
+  
+  public Deckable getFirstCard(){
     return this.hand[0];
   }
 
 
-  public Deckable getCard2(){
-    return this.hand[1];
-  }
-
-
-
-  public void addHand(Deckable card1, Deckable card2){
+  public void getHand(Deckable card1, Deckable card2){
     this.hand[0] = card1;
     this.hand[1] = card2;
   }

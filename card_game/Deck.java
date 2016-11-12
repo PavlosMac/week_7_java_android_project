@@ -2,10 +2,9 @@ package card_game;
 import card_game.*;
 import java.util.*;
 
-public class Deck{
+public class Deck implements Dealable{
 
-  private Card card;
-  private RoyalCard royal;
+  private Deckable card;
   private String deckName;
   public ArrayList<Deckable> cards;
 
@@ -13,6 +12,12 @@ public class Deck{
   public Deck(String deckName){
     this.deckName = deckName;
     this.cards = new ArrayList<Deckable>();
+  }
+
+  public void setupDeck(){
+    populateNumerals();
+    populateRoyals();
+    shuffle();
   }
 
   public void addCardtoDeck(Deckable card){
@@ -27,12 +32,12 @@ public class Deck{
     return this.cards.remove(0);
   }
 
-  public boolean checkTopCardAfterShuffle(Deckable card){
-    if (getTopCard().equals(card)){
-      return true;
-    } 
-    return false;
-  }
+//   public boolean checkTopCardAfterShuffle(Deckable card){
+//     if (getTopCard().equals(card)){
+//       return true;
+//     } 
+//     return false;
+//   }
 
   public void shuffle(){
     Collections.shuffle(cards);
@@ -54,8 +59,12 @@ public class Deck{
     }
   }
 
+//   public void getCard(){
+//     Deckable card = cards.remove(0);
+//     return card;
+//   }
 
-  
+
 
 
 

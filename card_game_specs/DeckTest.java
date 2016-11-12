@@ -2,6 +2,8 @@ import card_game.*;
 import static org.junit.Assert.*;
 import org.junit.*;
 import java.util.*;
+import org.mockito.*;
+import static org.mockito.Mockito.*;
 
 
 public class DeckTest{
@@ -9,7 +11,8 @@ public class DeckTest{
   Deck deck;
   Deckable fourOfSpades;
   Deckable threeOfClubs;
-  Deckable fiveOfHearts;
+  Deckable kingOfHearts;
+  Dealable spyDeck;
 
 
   @Before
@@ -17,7 +20,8 @@ public class DeckTest{
     deck = new Deck("normal deck");
     fourOfSpades = new Card(4, SuitType.SPADES);
     threeOfClubs = new Card(3, SuitType.CLUBS);
-    threeOfClubs = new Card(5, SuitType.HEARTS);
+    kingOfHearts = new RoyalCard(RoyalType.KING, SuitType.HEARTS);
+    spyDeck = Mockito.spy(deck); 
   }
 
   @Test
@@ -41,8 +45,20 @@ public class DeckTest{
     assertEquals(52, deck.count());
   }
 
+  // @Test
+  // public void deckGivesRandomCard(){
+  //   deck.setUpDeck();
+  //   Deckable randomCard = deck.getTopCard();
+
+  // }
+
+  @Test
+  public void testReturnsCard(){
+  
+    Mockito.when(spyDeck.setUpdeck().getTopCard()).thenReturn(Deckable card);
+    assertEquals(Deckable, deck.getTopCard.class);
+  }
   
 
-
-
 }
+

@@ -12,7 +12,6 @@ import org.junit.*;
         queenOfHearts = new RoyalCard(RoyalType.QUEEN, SuitType.HEARTS);
     }
 
-
     @Test 
     public void cardHasRoyal(){
         assertEquals(RoyalType.QUEEN, queenOfHearts.getRoyal());
@@ -25,8 +24,13 @@ import org.junit.*;
 
 
     @Test
-    public void RoyalcardValueAsString(){
+    public void royalcardValueAsString(){
       assertEquals("queen of hearts", queenOfHearts.toString());
+    }
+
+    @Test
+    public void royalCardHasHandValue(){
+      assertEquals(10, queenOfHearts.getRoyalValue());
     }
 
   }
