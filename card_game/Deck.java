@@ -2,7 +2,7 @@ package card_game;
 import card_game.*;
 import java.util.*;
 
-public class Deck implements Dealable{
+public class Deck {
 
   private Deckable card;
   private String deckName;

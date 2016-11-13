@@ -1,6 +1,6 @@
-package card_game;
+// package card_game;
 
-public interface Participant{
+// public interface Participant{
   
-  void getHand(Deckable card1, Deckable card2);
-}
+//   void getHand(Deckable card1, Deckable card2);
+// }

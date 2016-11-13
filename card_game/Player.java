@@ -3,7 +3,7 @@ import card_game.*;
 import java.util.*;
 
 
-public class Player implements Participant{
+public class Player{
 
   private String name; 
   private Deckable[] hand;

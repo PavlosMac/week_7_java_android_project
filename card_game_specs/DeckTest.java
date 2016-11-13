@@ -12,7 +12,7 @@ public class DeckTest{
   Deckable fourOfSpades;
   Deckable threeOfClubs;
   Deckable kingOfHearts;
-  Dealable spyDeck;
+  
 
 
   @Before
