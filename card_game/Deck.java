@@ -29,15 +29,10 @@ public class Deck {
   }
 
   public Deckable getTopCard(){
-    return this.cards.remove(0);
+    Deckable card =  this.cards.remove(0);
+    return card;
   }
 
-//   public boolean checkTopCardAfterShuffle(Deckable card){
-//     if (getTopCard().equals(card)){
-//       return true;
-//     } 
-//     return false;
-//   }
 
   public void shuffle(){
     Collections.shuffle(cards);

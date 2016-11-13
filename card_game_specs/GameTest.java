@@ -2,7 +2,7 @@ import card_game.*;
 import java.util.*;
 import static org.junit.Assert.*;
 import org.junit.*;
-
+import org.junit.Test;
 
 
   public class GameTest{
@@ -33,16 +33,19 @@ import org.junit.*;
       assertEquals(3, game.playerCount());
     }
 
-//     // @Test
-//     // public void gameCanDealToPlayers(){
-//     //   game.dealToPlayers(deck);
-//     //   assertNotNull(player1.hand());
-//     //   assertNotNull(player2.hand());
-//     // }
-
-//     // @Test
-//     // public void gameCan
-
+    @Test
+    public void gameCanDealToPlayers(){
+      game.addPlayers(player1);
+      game.addPlayers(player2);
+      game.addPlayers(player3);
+      game.deal(deck);
+      Deckable hand1 = player1.getFirstCard();
+      Deckable hand2 = player2.getFirstCard();
+      Deckable hand3 = player3.getFirstCard();
+      assertNotNull(hand1);
+      assertNotNull(hand2);
+      assertNotNull(hand3);
+    }
 
 
 

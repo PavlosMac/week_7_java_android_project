@@ -26,17 +26,17 @@ import java.util.*;
     }
 
    
-    // public void dealToPlayers(Deck deck, Participant dealer){
-    //   deck.setupDeck();
+    public void deal(Deck deck){
+      deck.setUpDeck();
 
-    //   Deckable card1 = deal();
-    //   Deckable card2 = deal();
+      Deckable card1 = deck.getTopCard();
+      Deckable card2 = deck.getTopCard();
       
-    //   for ( Participant player : this.players){
-    //     player.addHand(card1, card2);
-    //   }
+      for ( Player player : this.players){
+        player.getHand(card1, card2);
+      }
 
-    // }
+    }
     
 
 
