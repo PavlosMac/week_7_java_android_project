@@ -25,7 +25,6 @@ import java.util.*;
       players.add(player);
     }
 
-   
     public void deal(Deck deck){
       deck.setUpDeck();
 

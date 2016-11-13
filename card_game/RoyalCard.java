@@ -31,4 +31,10 @@ public class RoyalCard implements Deckable{
     int value = getRoyal().getValue();
       return value;
   }
+
+  public int overallCardValue(){
+    return getRoyalValue();
+  }
+
+
 }

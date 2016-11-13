@@ -45,7 +45,21 @@ import org.junit.Test;
       assertNotNull(hand1);
       assertNotNull(hand2);
       assertNotNull(hand3);
+      assertTrue(hand1 instanceof Deckable);
     }
+
+    // @Test
+    // public void gameCanCompareHands(){
+    //   game.addPlayers(player1);
+    //   game.addPlayers(player2);
+    //   game.addPlayers(player3);
+    //   game.deal(deck);
+    //   game.winChecker();
+    //   Deckable player1Hand = player1.getFirstCard();
+    //   Deckable player2Hand = player2.getFirstCard();
+    //   assertTrue(int.class, player1Hand); 
+    // }
+
 
 
 

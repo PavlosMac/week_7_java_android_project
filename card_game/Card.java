@@ -28,5 +28,8 @@ public class Card implements Deckable{
     return String.format("%d of %s", numToString, suitToString.name().toLowerCase());
   }
 
+  public int overallCardValue(){
+    return getNumber();
+  }
 
 }

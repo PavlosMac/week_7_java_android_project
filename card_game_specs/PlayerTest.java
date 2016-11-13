@@ -25,7 +25,7 @@ public class PlayerTest{
 
 
   @Test
-  public void playerCanGetHand(){
+  public void testPlayerCanGetHand(){
     player.getHand(card1,card2);
     Deckable card = player.getFirstCard();
     assertEquals("3 of spades", card.toString());
@@ -33,11 +33,16 @@ public class PlayerTest{
 
 
   @Test 
-  public void playerCanShowHand(){
+  public void testPlayerCanShowHand(){
     player.getHand(card1,card2);
     assertEquals("3 of spades, ace of diamonds", player.canShowhand());
   }
 
-
+  @Test
+  public void testHandHasValue(){
+    player.getHand(card1, card2);
+    int totalOfHand = player.getOverallHandValue();
+    assertNotNull(totalOfHand);
+  }
 
 }
