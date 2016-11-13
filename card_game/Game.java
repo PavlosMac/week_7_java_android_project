@@ -28,17 +28,17 @@
 //     }
 
    
-//     public void dealToPlayers(Deck deck, Participant dealer){
-//       deck.setupDeck();
+    // public void dealToPlayers(Deck deck, Participant dealer){
+    //   deck.setupDeck();
 
-//       Deckable card1 = dealer.deal();
-//       Deckable card2 = dealer.deal();
+    //   Deckable card1 = dealer.deal();
+    //   Deckable card2 = dealer.deal();
       
-//       for ( Participant player : this.players){
-//         player.addHand(card1, card2);
-//       }
+    //   for ( Participant player : this.players){
+    //     player.addHand(card1, card2);
+    //   }
 
-//     }
+    // }
     
 
 
