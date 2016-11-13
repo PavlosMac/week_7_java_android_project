@@ -21,7 +21,7 @@ public class DeckTest{
     fourOfSpades = new Card(4, SuitType.SPADES);
     threeOfClubs = new Card(3, SuitType.CLUBS);
     kingOfHearts = new RoyalCard(RoyalType.KING, SuitType.HEARTS);
-    spyDeck = Mockito.spy(deck); 
+     
   }
 
   @Test
@@ -52,12 +52,7 @@ public class DeckTest{
 
   // }
 
-  @Test
-  public void testReturnsCard(){
-  
-    Mockito.when(spyDeck.setUpdeck().getTopCard()).thenReturn(Deckable card);
-    assertEquals(Deckable, deck.getTopCard.class);
-  }
+
   
 
 }

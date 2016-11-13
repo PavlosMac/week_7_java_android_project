@@ -14,7 +14,7 @@ public class Deck implements Dealable{
     this.cards = new ArrayList<Deckable>();
   }
 
-  public void setupDeck(){
+  public void setUpDeck(){
     populateNumerals();
     populateRoyals();
     shuffle();

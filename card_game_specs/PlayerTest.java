@@ -5,8 +5,8 @@ import org.junit.*;
 public class PlayerTest{
 
   Player player;
-  Deckable card1;
-  Deckable card2;
+  Card card1;
+  RoyalCard card2;
 
   @Before
   public void before(){

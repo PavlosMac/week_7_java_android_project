@@ -1,29 +1,29 @@
-// import card_game.*;
-// import static org.junit.Assert.*;
-// import org.junit.*;
+import card_game.*;
+import static org.junit.Assert.*;
+import org.junit.*;
 
 
-//   public class DealerTest{
+  public class DealerTest{
 
-//     Deck deck;
-//     Dealer dealer;
+    Deck deck;
+    Dealer dealer;
 
-//   @Before 
-//   public void before(){
-//     deck = new Deck("Pontoon deck");
-//     dealer = new Dealer("Linnea", deck);
-//   }
+  @Before 
+  public void before(){
+    deck = new Deck("Pontoon deck");
+    dealer = new Dealer("Linnea", deck);
+  }
 
-//   @Test
-//   public void dealerHasName(){
-//     assertEquals("Linnea", dealer.getName());
-//   }
+  @Test
+  public void dealerHasName(){
+    assertEquals("Linnea", dealer.getName());
+  }
 
-//   @Test
-//   public void dealerhasCardsInDeck(){
-//     dealer.makeDeck();
-//     assertEquals(52, deck.count());   
-//   }
+  @Test
+  public void dealerHasCardsInDeck(){
+    dealer.getDeck(deck);
+    assertEquals(52, deck.count());   
+  }
 
 
 //   @Test
@@ -42,5 +42,5 @@
 
 
 
-// }
+}
 
